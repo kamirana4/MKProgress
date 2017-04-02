@@ -10,8 +10,8 @@ import UIKit
 
 class MKProgressViewController: UIViewController {
 
-    var background: MKProgressBackground = {
-        let bg = MKProgressBackground()
+    var background: MKProgressBackgroundView = {
+        let bg = MKProgressBackgroundView()
         bg.translatesAutoresizingMaskIntoConstraints = false
         return bg
     }()

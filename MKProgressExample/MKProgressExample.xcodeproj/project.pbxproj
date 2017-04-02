@@ -12,6 +12,8 @@
 		FA864FC31E917F1B004AB7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA864FC11E917F1B004AB7B0 /* Main.storyboard */; };
 		FA864FC51E917F1B004AB7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA864FC41E917F1B004AB7B0 /* Assets.xcassets */; };
 		FA864FC81E917F1B004AB7B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA864FC61E917F1B004AB7B0 /* LaunchScreen.storyboard */; };
+		FA8650321E918FE3004AB7B0 /* MKProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA86502D1E91863E004AB7B0 /* MKProgress.framework */; };
+		FA8650331E918FE3004AB7B0 /* MKProgress.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA86502D1E91863E004AB7B0 /* MKProgress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,28 @@
 			remoteGlobalIDString = FA86500D1E9184CF004AB7B0;
 			remoteInfo = MKProgress;
 		};
+		FA8650341E918FE3004AB7B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA8650281E91863E004AB7B0 /* MKProgress.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FA86500D1E9184CF004AB7B0;
+			remoteInfo = MKProgress;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA8650361E918FE3004AB7B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA8650331E918FE3004AB7B0 /* MKProgress.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA864FBA1E917F1B004AB7B0 /* MKProgressExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKProgressExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8650321E918FE3004AB7B0 /* MKProgress.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +125,13 @@
 				FA864FB61E917F1B004AB7B0 /* Sources */,
 				FA864FB71E917F1B004AB7B0 /* Frameworks */,
 				FA864FB81E917F1B004AB7B0 /* Resources */,
+				FA8650361E918FE3004AB7B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				FA86502F1E918662004AB7B0 /* PBXTargetDependency */,
+				FA8650351E918FE3004AB7B0 /* PBXTargetDependency */,
 			);
 			name = MKProgressExample;
 			productName = MKProgressExample;
@@ -192,6 +218,11 @@
 			isa = PBXTargetDependency;
 			name = MKProgress;
 			targetProxy = FA86502E1E918662004AB7B0 /* PBXContainerItemProxy */;
+		};
+		FA8650351E918FE3004AB7B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MKProgress;
+			targetProxy = FA8650341E918FE3004AB7B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -313,6 +344,7 @@
 		FA864FCD1E917F1B004AB7B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MKProgressExample/Info.plist;
@@ -327,6 +359,7 @@
 		FA864FCE1E917F1B004AB7B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MKProgressExample/Info.plist;

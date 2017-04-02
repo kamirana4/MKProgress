@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MKActivityIndicatorView: MKProgressBase {
+class MKActivityIndicatorView: MKProgressBaseView {
 
     let activityIndicatorView: UIActivityIndicatorView = {
         let activity = UIActivityIndicatorView(activityIndicatorStyle: .white)

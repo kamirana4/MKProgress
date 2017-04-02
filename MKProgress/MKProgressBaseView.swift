@@ -1,5 +1,5 @@
 //
-//  MKProgressBackground.swift
+//  MKProgressBase.swift
 //  MKProgress
 //
 //  Created by Muhammad Kamran on 3/29/17.
@@ -8,19 +8,22 @@
 
 import UIKit
 
-class MKProgressBackground: UIView {
-    
+class MKProgressBaseView: UIView {
+
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         configureView()
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 
-    private func configureView() {
-        backgroundColor = UIColor.init(white: 0, alpha: 0.50)
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("Fatal error occurred while setup!")
+    }
+    
+    open func configureView() {
+        
+        clipsToBounds = true
+        layer.cornerRadius = 12.0
+        backgroundColor = UIColor.init(white: 0, alpha: 0.9)
     }
 }

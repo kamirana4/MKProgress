@@ -10,8 +10,8 @@
 		FA8650131E9184CF004AB7B0 /* MKProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8650111E9184CF004AB7B0 /* MKProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA8650211E918556004AB7B0 /* MKActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86501C1E918556004AB7B0 /* MKActivityIndicatorView.swift */; };
 		FA8650221E918556004AB7B0 /* MKProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86501D1E918556004AB7B0 /* MKProgress.swift */; };
-		FA8650231E918556004AB7B0 /* MKProgressBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86501E1E918556004AB7B0 /* MKProgressBackground.swift */; };
-		FA8650241E918556004AB7B0 /* MKProgressBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86501F1E918556004AB7B0 /* MKProgressBase.swift */; };
+		FA8650231E918556004AB7B0 /* MKProgressBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86501E1E918556004AB7B0 /* MKProgressBackgroundView.swift */; };
+		FA8650241E918556004AB7B0 /* MKProgressBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86501F1E918556004AB7B0 /* MKProgressBaseView.swift */; };
 		FA8650251E918556004AB7B0 /* MKProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8650201E918556004AB7B0 /* MKProgressViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,8 +20,8 @@
 		FA8650111E9184CF004AB7B0 /* MKProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKProgress.h; sourceTree = "<group>"; };
 		FA86501C1E918556004AB7B0 /* MKActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKActivityIndicatorView.swift; sourceTree = "<group>"; };
 		FA86501D1E918556004AB7B0 /* MKProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKProgress.swift; sourceTree = "<group>"; };
-		FA86501E1E918556004AB7B0 /* MKProgressBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKProgressBackground.swift; sourceTree = "<group>"; };
-		FA86501F1E918556004AB7B0 /* MKProgressBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKProgressBase.swift; sourceTree = "<group>"; };
+		FA86501E1E918556004AB7B0 /* MKProgressBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKProgressBackgroundView.swift; sourceTree = "<group>"; };
+		FA86501F1E918556004AB7B0 /* MKProgressBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKProgressBaseView.swift; sourceTree = "<group>"; };
 		FA8650201E918556004AB7B0 /* MKProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKProgressViewController.swift; sourceTree = "<group>"; };
 		FA8650261E918598004AB7B0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,8 +59,8 @@
 				FA8650261E918598004AB7B0 /* Info.plist */,
 				FA86501C1E918556004AB7B0 /* MKActivityIndicatorView.swift */,
 				FA86501D1E918556004AB7B0 /* MKProgress.swift */,
-				FA86501E1E918556004AB7B0 /* MKProgressBackground.swift */,
-				FA86501F1E918556004AB7B0 /* MKProgressBase.swift */,
+				FA86501E1E918556004AB7B0 /* MKProgressBackgroundView.swift */,
+				FA86501F1E918556004AB7B0 /* MKProgressBaseView.swift */,
 				FA8650201E918556004AB7B0 /* MKProgressViewController.swift */,
 				FA8650111E9184CF004AB7B0 /* MKProgress.h */,
 			);
@@ -149,9 +149,9 @@
 			files = (
 				FA8650221E918556004AB7B0 /* MKProgress.swift in Sources */,
 				FA8650251E918556004AB7B0 /* MKProgressViewController.swift in Sources */,
-				FA8650231E918556004AB7B0 /* MKProgressBackground.swift in Sources */,
+				FA8650231E918556004AB7B0 /* MKProgressBackgroundView.swift in Sources */,
 				FA8650211E918556004AB7B0 /* MKActivityIndicatorView.swift in Sources */,
-				FA8650241E918556004AB7B0 /* MKProgressBase.swift in Sources */,
+				FA8650241E918556004AB7B0 /* MKProgressBaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +321,7 @@
 				FA8650181E9184CF004AB7B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
