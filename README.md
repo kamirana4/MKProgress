@@ -38,7 +38,7 @@ MKProgress.hide()
 
 ## Licence
 
-Agrume is released under the MIT license. See LICENSE for details
+MKProgress is released under the MIT license. See LICENSE for details
 
 
 
