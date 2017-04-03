@@ -20,7 +20,7 @@ pod 'MKProgress'
 
 ## Usage
 
-The included sample code shows how to use the message bar. 
+The included sample code shows how to use the Progress HUD. 
 
 To display the Progress HUD:
 
