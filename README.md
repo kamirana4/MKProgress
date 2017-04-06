@@ -7,7 +7,7 @@ An iOS Simple Swift Progress HUD
 ## Requirements
 
 - iOS 8+
-- Swift 3
+- Swift 3.x.x
 - Xcode 8.0+ 
 
 ## Installation
