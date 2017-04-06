@@ -10,10 +10,10 @@ import UIKit
 
 public final class MKProgress {
     
-    private var hudWindow: UIWindow? = nil
+    fileprivate var hudWindow: UIWindow? = nil
     public static var shared = MKProgress()
     
-    private func getHUDWindow() -> UIWindow {
+    fileprivate func getHUDWindow() -> UIWindow {
         let hudWindow = UIWindow()
         hudWindow.frame = UIScreen.main.bounds
         hudWindow.isHidden = false
@@ -23,6 +23,9 @@ public final class MKProgress {
         hudWindow.rootViewController = controller
         return hudWindow
     }
+}
+
+extension MKProgress {
     
     public static func show() {
         if shared.hudWindow == nil {
