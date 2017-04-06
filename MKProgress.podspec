@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MKProgress"
-  s.version      = "0.0.1"
+  s.version      = "1.0.1"
   s.summary      = "An iOS Progress HUD written in Swift"
 
   # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/kamirana4/MKProgress"
-  s.screenshots  = "https://www.dropbox.com/s/601xnyxy76mnugq/Simulator%20Screen%20Shot%20Apr%203%2C%202017%2C%2011.04.49%20PM.png"
+  s.screenshots  = "https://dl.dropboxusercontent.com/s/601xnyxy76mnugq/Simulator%20Screen%20Shot%20Apr%203%2C%202017%2C%2011.04.49%20PM.png"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
