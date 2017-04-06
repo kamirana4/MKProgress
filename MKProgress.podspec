@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'MKProgress'
-  s.version      = '1.0.2'
+  s.version      = '1.0.3'
   s.summary      = 'An iOS Progress HUD written in Swift'
   s.description  = <<-DESC
                     A simple progress HUD written in Swift.

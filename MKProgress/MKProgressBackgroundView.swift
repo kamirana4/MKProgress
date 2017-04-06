@@ -21,6 +21,6 @@ class MKProgressBackgroundView: UIView {
     }
 
     private func configureView() {
-        backgroundColor = UIColor.init(white: 0, alpha: 0.50)
+        backgroundColor = MKProgress.config.backgroundColor
     }
 }

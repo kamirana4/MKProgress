@@ -25,6 +25,8 @@ class MKProgressViewController: UIViewController {
     internal override func viewDidLoad() {
         super.viewDidLoad()
         
+        let config = MKProgress.config
+        
         view.addSubview(background)
         background.addSubview(indicator)
         
@@ -37,8 +39,8 @@ class MKProgressViewController: UIViewController {
         
         x = indicator.centerXAnchor.constraint(equalTo: background.centerXAnchor)
         y = indicator.centerYAnchor.constraint(equalTo: background.centerYAnchor, constant: -30.0)
-        w = indicator.widthAnchor.constraint(equalToConstant: 50.0)
-        h = indicator.heightAnchor.constraint(equalToConstant: 50.0)
+        w = indicator.widthAnchor.constraint(equalToConstant: config.width)
+        h = indicator.heightAnchor.constraint(equalToConstant: config.height)
         
         NSLayoutConstraint.activate([x, y, w, h])
     }
@@ -57,11 +59,11 @@ class MKProgressViewController: UIViewController {
     }
     
     internal override var preferredStatusBarStyle: UIStatusBarStyle {
-        return self.presentingViewController?.preferredStatusBarStyle ?? UIApplication.shared.statusBarStyle
+        return MKProgress.config.preferredStatusBarStyle
     }
     
     internal override var prefersStatusBarHidden: Bool {
-        return self.presentingViewController?.prefersStatusBarHidden ?? UIApplication.shared.isStatusBarHidden
+        return MKProgress.config.prefersStatusBarHidden
     }
     
     internal override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {

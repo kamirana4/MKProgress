@@ -21,9 +21,9 @@ class MKProgressBaseView: UIView {
     }
     
     open func configureView() {
-        
+        let config = MKProgress.config
         clipsToBounds = true
-        layer.cornerRadius = 12.0
-        backgroundColor = UIColor.init(white: 0, alpha: 0.9)
+        layer.cornerRadius = config.cornerRadius
+        backgroundColor = config.hudColor
     }
 }
