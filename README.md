@@ -2,7 +2,7 @@
 An iOS Simple Swift Progress HUD 
 
 
-![image](https://www.dropbox.com/s/601xnyxy76mnugq/Simulator%20Screen%20Shot%20Apr%203%2C%202017%2C%2011.04.49%20PM.png?dl=0)
+![image](https://dl.dropboxusercontent.com/s/601xnyxy76mnugq/Simulator%20Screen%20Shot%20Apr%203%2C%202017%2C%2011.04.49%20PM.png)
 
 ## Requirements
 
