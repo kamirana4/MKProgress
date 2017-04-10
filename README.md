@@ -2,7 +2,7 @@
 An iOS Simple Swift Progress HUD 
 
 
-![image](https://dl.dropboxusercontent.com/s/ljf5dsoyic2loci/pro_1.png)
+![image](https://github.com/kamirana4/MKProgress/blob/master/_PNG/1.png, https://github.com/kamirana4/MKProgress/blob/master/_PNG/2.png, https://github.com/kamirana4/MKProgress/blob/master/_PNG/3.png)
 
 ## Requirements
 
@@ -33,7 +33,10 @@ To display the Progress HUD:
 
 ```swift
 import MKProgress
+```
 
+To Show the Progress HUD:
+```swift
 MKProgress.show()
 ```
 
@@ -49,12 +52,12 @@ MKProgress can be customized via the following configurations:
 
 ```swift
 
-MKProgress.config.width = 60.0
-MKProgress.config.height = 60.0
-MKProgress.config.activityIndicatorStyle = .white
+MKProgress.config.width = 64.0
+MKProgress.config.height = 64.0
+MKProgress.config.activityIndicatorStyle = .whiteLarge
 MKProgress.config.activityIndicatorColor = .black
 MKProgress.config.hudColor = .white
-MKProgress.config.cornerRadius = 12.0
+MKProgress.config.cornerRadius = 16.0
 MKProgress.config.backgroundColor = UIColor.init(white: 0, alpha: 0.55)
 MKProgress.config.preferredStatusBarStyle = .lightContent
 MKProgress.config.prefersStatusBarHidden = false

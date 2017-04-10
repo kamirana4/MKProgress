@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = 'https://github.com/kamirana4/MKProgress'
-  s.screenshots  = 'https://dl.dropboxusercontent.com/s/601xnyxy76mnugq/Simulator%20Screen%20Shot%20Apr%203%2C%202017%2C%2011.04.49%20PM.png'
+  s.screenshots  = 'https://github.com/kamirana4/MKProgress/blob/master/_PNG/1.png', 'https://github.com/kamirana4/MKProgress/blob/master/_PNG/2.png', 'https://github.com/kamirana4/MKProgress/blob/master/_PNG/3.png'
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author             = { 'Muhammad Kamran' => 'https://github.com/kamirana4' }
