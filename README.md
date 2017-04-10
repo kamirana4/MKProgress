@@ -6,8 +6,8 @@ An iOS Simple Swift Progress HUD
 
 ## Requirements
 
-- iOS 8+
-- Swift 3.x.x
+- iOS 9.0+
+- Swift 3.0+
 - Xcode 8.0+ 
 
 ## Installation
@@ -29,9 +29,8 @@ This will pull the latest master branch everytime you do 'pod isntall'
 
 The included sample code shows how to use the Progress HUD. 
 
-To display the Progress HUD:
 
-Import MKProgress HUD:
+Import MKProgress:
 ```swift
 import MKProgress
 ```
