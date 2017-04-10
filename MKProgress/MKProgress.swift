@@ -12,23 +12,23 @@ public struct MKConfig {
     
     /**
      @ Progress HUD background view's 'Width'.
-     @ Try to provide the 'Width' and 'Height' same.
-     @ Default: 50.0
+     @ Try to provide the equal 'Width' and 'Height'.
+     @ Default: 64.0
      */
-    public var width: CGFloat = 50.0
+    public var width: CGFloat = 64.0
     
     
     /**
      @ Progress HUD background view's 'Height'.
-     @ Try to provide the 'Width' and 'Height' same.
-     @ Default: 50.0
+     @ Try to provide the equal 'Width' and 'Height'.
+     @ Default: 64.0
      */
-    public var height: CGFloat = 50.0
+    public var height: CGFloat = 64.0
     
 
     /**
      @ Progress HUD activity indicator style
-     @ Default: .white
+     @ Default: .whiteLarge
      */
     public var activityIndicatorStyle: UIActivityIndicatorViewStyle = .white
     
@@ -49,9 +49,9 @@ public struct MKConfig {
     
     /**
      @ Progress HUD corner radius
-     @ Default: 12.0
+     @ Default: 16.0
      */
-    public var cornerRadius: CGFloat = 12.0
+    public var cornerRadius: CGFloat = 16.0
     
     
     /**
