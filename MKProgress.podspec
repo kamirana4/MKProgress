@@ -8,13 +8,13 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = 'https://github.com/kamirana4/MKProgress'
-  s.screenshots  = 'https://github.com/kamirana4/MKProgress/blob/master/_PNG/1.png', 'https://github.com/kamirana4/MKProgress/blob/master/_PNG/2.png', 'https://github.com/kamirana4/MKProgress/blob/master/_PNG/3.png'
+  s.screenshots  = 'https://dl.dropboxusercontent.com/s/601xnyxy76mnugq/Simulator%20Screen%20Shot%20Apr%203%2C%202017%2C%2011.04.49%20PM.png'
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author             = { 'Muhammad Kamran' => 'https://github.com/kamirana4' }
   #s.social_media_url   = 'https://www.facebook.com/kamran.fac'
   s.platform     = :ios, '9.0'
-  s.source       = { :git => 'https://github.com/kamirana4/MKProgress.git', :tag => s.version }
+  s.source       = { :git => 'https://github.com/kamirana4/MKProgress.git', :tag => s.version.to_s }
   s.source_files  = 'MKProgress/*.{swift,plist}'
   # s.resource  = 'icon.png'
   # s.resources = 'Resources/*.png'
