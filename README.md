@@ -2,7 +2,7 @@
 An iOS Simple Swift Progress HUD 
 
 
-![image](https://github.com/kamirana4/MKProgress/blob/master/_PNG/1.png, https://github.com/kamirana4/MKProgress/blob/master/_PNG/2.png, https://github.com/kamirana4/MKProgress/blob/master/_PNG/3.png)
+![image](https://github.com/kamirana4/MKProgress/blob/master/_PNG/1.png)
 
 ## Requirements
 
@@ -31,16 +31,17 @@ The included sample code shows how to use the Progress HUD.
 
 To display the Progress HUD:
 
+Import MKProgress HUD:
 ```swift
 import MKProgress
 ```
 
-To Show the Progress HUD:
+Show the Progress HUD:
 ```swift
 MKProgress.show()
 ```
 
-To hide the Progress HUD:
+Hide the Progress HUD:
 ```swift
 
 MKProgress.hide()
