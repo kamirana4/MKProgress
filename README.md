@@ -15,7 +15,7 @@ An iOS Simple Swift Progress HUD
 MKProgress is only available via [CocoaPods](http://cocoapods.org):
 
 ```ruby
-pod 'MKProgress'
+pod 'MKProgress', '~> 1.0.5'
 ```
 If you want to use the latest features of MKProgress use normal external source dependencies.
 
