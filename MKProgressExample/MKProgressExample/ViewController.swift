@@ -22,8 +22,7 @@ class ViewController: UIViewController {
     @IBAction func show(_ sender: UIButton) {
         MKProgress.show()
         
-        let timeInterval = TimeInterval(3)
-        Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: false) { (timer) in
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
             MKProgress.hide()
         }
     }

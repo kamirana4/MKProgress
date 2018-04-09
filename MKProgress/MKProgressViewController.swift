@@ -59,7 +59,7 @@ class MKProgressViewController: UIViewController {
         let config = MKProgress.config
         
         let x = view.centerXAnchor.constraint(equalTo: background.centerXAnchor)
-        let y = view.centerYAnchor.constraint(equalTo: background.centerYAnchor, constant: -30.0)
+        let y = view.centerYAnchor.constraint(equalTo: background.centerYAnchor, constant: -config.hudYOffset)
         let w = view.widthAnchor.constraint(equalToConstant: config.width)
         let h = view.heightAnchor.constraint(equalToConstant: config.height)
         
