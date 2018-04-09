@@ -8,7 +8,15 @@
 
 import UIKit
 
-class MKProgressBaseView: UIView {
+protocol ProgressViewDataSource {
+    func configureView()
+}
+
+protocol ProgressViewDataDelegate {
+    func stopAnimation()
+}
+
+class MKProgressBaseView: UIView, ProgressViewDataSource, ProgressViewDataDelegate {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,10 +28,14 @@ class MKProgressBaseView: UIView {
         fatalError("Fatal error occurred while setup!")
     }
     
-    open func configureView() {
+    func configureView() {
         let config = MKProgress.config
         clipsToBounds = true
         layer.cornerRadius = config.cornerRadius
         backgroundColor = config.hudColor
+    }
+    
+    func stopAnimation() {
+        // Implement to provide functionality
     }
 }

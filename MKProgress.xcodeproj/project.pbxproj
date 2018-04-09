@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A512BB36207B5BDF0070CE9C /* MKRatationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512BB35207B5BDF0070CE9C /* MKRatationView.swift */; };
 		FA8650131E9184CF004AB7B0 /* MKProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8650111E9184CF004AB7B0 /* MKProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA8650211E918556004AB7B0 /* MKActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86501C1E918556004AB7B0 /* MKActivityIndicatorView.swift */; };
 		FA8650221E918556004AB7B0 /* MKProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86501D1E918556004AB7B0 /* MKProgress.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A512BB35207B5BDF0070CE9C /* MKRatationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKRatationView.swift; sourceTree = "<group>"; };
 		FA86500E1E9184CF004AB7B0 /* MKProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8650111E9184CF004AB7B0 /* MKProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKProgress.h; sourceTree = "<group>"; };
 		FA86501C1E918556004AB7B0 /* MKActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKActivityIndicatorView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				FA86501F1E918556004AB7B0 /* MKProgressBaseView.swift */,
 				FA8650201E918556004AB7B0 /* MKProgressViewController.swift */,
 				FA8650111E9184CF004AB7B0 /* MKProgress.h */,
+				A512BB35207B5BDF0070CE9C /* MKRatationView.swift */,
 			);
 			path = MKProgress;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				FA8650221E918556004AB7B0 /* MKProgress.swift in Sources */,
 				FA8650251E918556004AB7B0 /* MKProgressViewController.swift in Sources */,
+				A512BB36207B5BDF0070CE9C /* MKRatationView.swift in Sources */,
 				FA8650231E918556004AB7B0 /* MKProgressBackgroundView.swift in Sources */,
 				FA8650211E918556004AB7B0 /* MKActivityIndicatorView.swift in Sources */,
 				FA8650241E918556004AB7B0 /* MKProgressBaseView.swift in Sources */,

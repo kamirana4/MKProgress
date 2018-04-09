@@ -10,21 +10,22 @@ import UIKit
 import MKProgress
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        MKProgress.config.hudType = .radial
+        MKProgress.config.circleBorderColor = .red
+        MKProgress.config.logoImage = #imageLiteral(resourceName: "Swift_logo")
+    }
+    
+    @IBAction func show(_ sender: UIButton) {
         MKProgress.show()
         
-        let timeInterval = TimeInterval.init(3.0)
+        let timeInterval = TimeInterval(3)
         Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: false) { (timer) in
             MKProgress.hide()
         }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 

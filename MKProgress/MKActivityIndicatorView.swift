@@ -28,4 +28,8 @@ class MKActivityIndicatorView: MKProgressBaseView {
         let y = activityIndicatorView.centerYAnchor.constraint(equalTo: self.centerYAnchor)
         NSLayoutConstraint.activate([x, y])
     }
+    
+    override func stopAnimation() {
+        self.activityIndicatorView.stopAnimating()
+    }
 }
