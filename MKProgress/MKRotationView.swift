@@ -10,6 +10,9 @@ import UIKit
 
 class MKRotationView: MKProgressBaseView {
     
+    private let rotationAnimationKeyPath = "transform.rotation"
+    private let rotationAnimationKey = "rotation"
+    
     private let radialLayer = CAShapeLayer()
     
     private var logoView: UIImageView = {
@@ -65,15 +68,15 @@ class MKRotationView: MKProgressBaseView {
     }
     
     private func animateRadialLayerInfinitely() {
-        let rotation = CABasicAnimation(keyPath: "transform.rotation")
+        let rotation = CABasicAnimation(keyPath: rotationAnimationKeyPath)
         rotation.byValue = 2 * Double.pi
         rotation.duration = MKProgress.config.circleAnimationDuration
         rotation.repeatCount = Float.infinity
         
-        radialLayer.add(rotation, forKey: "lineRotation")
+        radialLayer.add(rotation, forKey: rotationAnimationKey)
     }
     
     override func stopAnimation() {
-        self.radialLayer.removeAnimation(forKey: "lineRotation")
+        self.radialLayer.removeAnimation(forKey: rotationAnimationKey)
     }
 }

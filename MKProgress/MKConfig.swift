@@ -2,7 +2,7 @@
 //  MKConfig.swift
 //  MKProgress
 //
-//  Created by SAMER DABBAGH on 4/9/18.
+//  Created by Muhammad Kamran on 4/9/18.
 //  Copyright © 2018 Muhammad Kamran. All rights reserved.
 //
 
@@ -69,12 +69,12 @@ public struct MKConfig {
     /**
      - Progress HUD FadeIn animation duration on start
      */
-    public var fadeInAnimationDuration: TimeInterval = 0.15
+    public var fadeInAnimationDuration: TimeInterval = 0.2
     
     /**
      - Progress HUD FadeOut animation duration on start
      */
-    public var fadeOutAnimationDuration: TimeInterval = 0.15
+    public var fadeOutAnimationDuration: TimeInterval = 0.25
     
     /**
      - Progress HUD Y offset to adjust view's vertical position

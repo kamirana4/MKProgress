@@ -66,7 +66,7 @@ public final class MKProgress {
 extension MKProgress {
     
     /**
-     - Returns if there is already progress hud.
+     - Returns if there is already visible progress hud.
      - Initialises new window.
      - Show's the progress hud.
      */
@@ -89,7 +89,12 @@ extension MKProgress {
         shared.playFadeInAnimation()
     }
     
-    public static func show(after wait: TimeInterval = 0.5, animated: Bool = true) {
+    /**
+     - Shows progress hud after the given time interval
+     - parameter wait: Wait interval before showing the progress hud. Default: 0.2 sec
+     - parameter animated: Flag to handle the fadeIn animation on presenting. Default: true
+     */
+    public static func show(after wait: TimeInterval = 0.2, animated: Bool = true) {
         shared.isWaitingToShow = true
         
         DispatchQueue.main.asyncAfter(deadline: .now() + wait) {[weak shared] in
@@ -122,8 +127,8 @@ extension MKProgress {
     }
     
     /**
-     - Hides the progress hud by resigning hud window.
-     - Resets hud window.
+     - Hides the progress hud
+     - parameter animated: Flag to handle the fadeOut animation on dismiss. Default: true
      */
     public static func hide(_ animated: Bool = true) {
         
