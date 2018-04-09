@@ -31,10 +31,14 @@ public final class MKProgress {
      */
     public static var config = MKConfig()
     
+    /**
+     - Flag to indicate if dismiss animation is being played to dismiss the ProgressHUD
+     */
     fileprivate var isDismissing = false
     
-    fileprivate var shouldShowAfterDismissing =  false
-    
+    /**
+     - Flag to indicate if Progress is waiting for the timeInterval given before showing up
+     */
     fileprivate var isWaitingToShow = false
     
     /**
@@ -68,12 +72,16 @@ extension MKProgress {
      */
     public static func show(_ animated: Bool = true) {
         if shared.isDismissing {
-            shared.shouldShowAfterDismissing = true
+            shared.isDismissing = false
+            makeKeyWindowVisible(animated)
             return
         }
 
         guard shared.hudWindow == nil else { return }
-        
+        makeKeyWindowVisible(animated)
+    }
+    
+    fileprivate static func makeKeyWindowVisible(_ animated: Bool) {
         shared.hudWindow = shared.getHUDWindow()
         shared.hudWindow?.makeKeyAndVisible()
         
@@ -97,8 +105,6 @@ extension MKProgress {
         
         UIView.animate(withDuration: MKProgress.config.fadeInAnimationDuration, animations: {
             rootViewController.view.layer.opacity = 1.0
-        }, completion: { _ in
-            MKProgress.shared.shouldShowAfterDismissing = false
         })
     }
     
@@ -110,6 +116,7 @@ extension MKProgress {
         rootViewController.view.layer.opacity = 1.0
         
         UIView.animate(withDuration: MKProgress.config.fadeOutAnimationDuration, animations: {
+            guard MKProgress.shared.isDismissing else { return }
             rootViewController.view.layer.opacity = 0.0
         }, completion: completion)
     }
@@ -121,7 +128,6 @@ extension MKProgress {
     public static func hide(_ animated: Bool = true) {
         
         func hideProgressHud() {
-            MKProgress.shared.shouldShowAfterDismissing = false
             MKProgress.shared.isDismissing = false
             
             MKProgress.shared.stopAnimatoins()
@@ -133,9 +139,7 @@ extension MKProgress {
         
         if animated {
             MKProgress.shared.playFadeOutAnimation({ _ in
-                if MKProgress.shared.shouldShowAfterDismissing {
-                    MKProgress.shared.playFadeInAnimation()
-                } else {
+                if MKProgress.shared.isDismissing {
                     hideProgressHud()
                 }
             })
