@@ -61,7 +61,7 @@ MKProgress can be customized via the following configurations:
 
 ```swift
 
-MKProgress.config.hudType: HudType = .radial
+MKProgress.config.hudType = .radial
 MKProgress.config.width = 64.0
 MKProgress.config.height = 64.0
 MKProgress.config.hudColor = .white
