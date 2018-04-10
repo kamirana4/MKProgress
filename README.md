@@ -7,15 +7,15 @@ An iOS Simple Swift Progress HUD
 ## Requirements
 
 - iOS 9.0+
-- Swift 3.0+
-- Xcode 8.0+ 
+- Swift 3.0, 4.0+
+- Xcode 8.0, 9.0+
 
 ## Installation
 
 MKProgress is only available via [CocoaPods](http://cocoapods.org):
 
 ```ruby
-pod 'MKProgress', '~> 1.0.5'
+pod 'MKProgress', '~> 1.0.6'
 ```
 If you want to use the latest features of MKProgress use normal external source dependencies.
 
@@ -38,6 +38,11 @@ import MKProgress
 Show the Progress HUD:
 ```swift
 MKProgress.show()
+```
+
+Show the Progress HUD with delay:
+```swift
+MKProgress.show(after: 0.1, animated: true)
 ```
 
 Hide the Progress HUD:
