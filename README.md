@@ -4,7 +4,10 @@ An iOS Simple Swift Progress HUD
 
 ![image](https://github.com/kamirana4/MKProgress/blob/master/_PNG/6.gif)
 ![image](https://github.com/kamirana4/MKProgress/blob/master/_PNG/5.gif)
-![image](https://github.com/kamirana4/MKProgress/blob/master/_PNG/5.gif)
+![image](https://github.com/kamirana4/MKProgress/blob/master/_PNG/4.gif)
+![image](https://github.com/kamirana4/MKProgress/blob/master/_PNG/3.gif)
+![image](https://github.com/kamirana4/MKProgress/blob/master/_PNG/2.gif)
+![image](https://github.com/kamirana4/MKProgress/blob/master/_PNG/1.gif)
 
 ## Requirements
 
