@@ -28,7 +28,7 @@ public struct MKConfig {
      - Progress HUD activity indicator style
      - Default: .whiteLarge
      */
-    public var activityIndicatorStyle: UIActivityIndicatorViewStyle = .white
+    public var activityIndicatorStyle: UIActivityIndicatorViewStyle = .whiteLarge
     
     /**
      - Progress HUD activity indicator color
@@ -68,21 +68,25 @@ public struct MKConfig {
     
     /**
      - Progress HUD FadeIn animation duration on start
+     - Default: 0.2 Sec
      */
     public var fadeInAnimationDuration: TimeInterval = 0.2
     
     /**
      - Progress HUD FadeOut animation duration on start
+     - Default: 0.25 Sec
      */
     public var fadeOutAnimationDuration: TimeInterval = 0.25
     
     /**
      - Progress HUD Y offset to adjust view's vertical position
+     - Default: 15
      */
     public var hudYOffset: CGFloat = 15
     
     /**
      - Progress HUD type
+     - Default: .radial
      */
     public var hudType: HudType = .radial
     
@@ -118,7 +122,6 @@ public struct MKConfig {
     
     /**
      - Logo image icon inside the rotating circle
-     - Default: 0.9 second
      */
     public var logoImage: UIImage?  = nil
     

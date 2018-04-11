@@ -144,9 +144,8 @@ extension MKProgress {
         
         if animated {
             MKProgress.shared.playFadeOutAnimation({ _ in
-                if MKProgress.shared.isDismissing {
-                    hideProgressHud()
-                }
+                guard MKProgress.shared.isDismissing else { return }
+                hideProgressHud()
             })
         } else {
             hideProgressHud()
