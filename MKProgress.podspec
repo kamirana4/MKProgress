@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'MKProgress'
-  s.version      = '1.0.6'
+  s.version      = '1.0.7'
   s.summary      = 'An iOS Progress HUD written in Swift'
   s.description  = <<-DESC
                     A simple progress HUD written in Swift.
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #s.social_media_url   = 'https://www.facebook.com/kamran.fac'
   s.platform     = :ios, '9.0'
   s.source       = { :git => 'https://github.com/kamirana4/MKProgress.git', :tag => s.version.to_s }
-  s.source_files  = 'MKProgress/*.{swift,plist}'
+  s.source_files  = 'MKProgress/*.{swift}'
   # s.resource  = 'icon.png'
   # s.resources = 'Resources/*.png'
 
