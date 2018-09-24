@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '9.0'
   s.source       = { :git => 'https://github.com/kamirana4/MKProgress.git', :tag => s.version.to_s }
   s.source_files  = 'MKProgress/*.{swift}'
+  s.swift_version = '4.2'
   # s.resource  = 'icon.png'
   # s.resources = 'Resources/*.png'
 
