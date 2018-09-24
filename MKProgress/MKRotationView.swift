@@ -59,7 +59,7 @@ class MKRotationView: MKProgressBaseView {
         
         radialLayer.path = circlePath.cgPath
         radialLayer.fillColor = UIColor.clear.cgColor
-        radialLayer.lineCap = kCALineCapRound
+        radialLayer.lineCap = CAShapeLayerLineCap.round
         radialLayer.strokeColor = config.circleBorderColor.cgColor
         radialLayer.lineWidth = config.circleBorderWidth
         radialLayer.strokeEnd = config.circleArcPercentage
