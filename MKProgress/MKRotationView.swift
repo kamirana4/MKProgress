@@ -65,6 +65,9 @@ class MKRotationView: MKProgressBaseView {
         radialLayer.strokeEnd = config.circleArcPercentage
         radialLayer.frame.origin = CGPoint(x: config.width/2, y: config.width/2)
         layer.addSublayer(radialLayer)
+        
+        /// Setting radialLayer animations persistent on application pause/resume
+        radialLayer.makeAnimationsPersistent()
     }
     
     private func animateRadialLayerInfinitely() {
