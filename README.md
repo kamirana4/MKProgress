@@ -11,15 +11,15 @@ An iOS Simple Swift Progress HUD
 ## Requirements
 
 - iOS 9.0+
-- Swift 3.0, 4.0, 4.1, 4.2
-- Xcode 8.0, 9.0, 10
+- Swift 3.0+
+- Xcode 8.0+
 
 ## Installation
 
 MKProgress is only available via [CocoaPods](http://cocoapods.org):
 
 ```ruby
-pod 'MKProgress', '~> 1.0.9'
+pod 'MKProgress', '~> 1.1.0'
 ```
 If you want to use the latest features of MKProgress use normal external source dependencies.
 

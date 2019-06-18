@@ -37,7 +37,7 @@ public extension CALayer {
         beginTime = timeSincePause
     }
     
-    public func makeAnimationsPersistent() {
+    func makeAnimationsPersistent() {
         var object = objc_getAssociatedObject(self, &AssociatedKeys.animationPersistence)
         if object == nil {
             object = MKLayerAnimationPersistence(with: self)
