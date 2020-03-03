@@ -1,50 +1,19 @@
 //
-//  MKProgressBase.swift
+//  MKLayerAnimationPersistence.swift
 //  MKProgress
 //
-//  Created by Muhammad Kamran on 3/29/17.
-//  Copyright © 2017 Muhammad Kamran. All rights reserved.
+//  Created by mac on 11/25/18.
+//  Copyright © 2018 Muhammad Kamran. All rights reserved.
 //
 
 import UIKit
 
-protocol ProgressViewDataSource {
-    func configureView()
-}
-
-protocol ProgressViewDataDelegate {
-    func stopAnimation()
-}
-
-class MKProgressBaseView: UIView, ProgressViewDataSource, ProgressViewDataDelegate {
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        configureView()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("Fatal error occurred while setup!")
-    }
-    
-    func configureView() {
-        let config = MKProgress.config
-        clipsToBounds = true
-        layer.cornerRadius = config.cornerRadius
-        backgroundColor = config.hudColor
-    }
-    
-    func stopAnimation() {
-        // Implement to provide functionality
-    }
-}
-
-public class LayerPersistentHelper {
+public class MKLayerAnimationPersistence {
     private var persistentAnimations: [String: CAAnimation] = [:]
     private var persistentSpeed: Float = 0.0
     private weak var layer: CALayer?
     
+    /// MARK: - Initialization
     public init(with layer: CALayer) {
         self.layer = layer
         addNotificationObservers()
@@ -55,13 +24,11 @@ public class LayerPersistentHelper {
     }
 }
 
-private extension LayerPersistentHelper {
+private extension MKLayerAnimationPersistence {
     func addNotificationObservers() {
         let center = NotificationCenter.default
-        let enterForeground = UIApplication.willEnterForegroundNotification
-        let enterBackground = UIApplication.didEnterBackgroundNotification
-        center.addObserver(self, selector: #selector(didBecomeActive), name: enterForeground, object: nil)
-        center.addObserver(self, selector: #selector(willResignActive), name: enterBackground, object: nil)
+        center.addObserver(self, selector: #selector(willResignActive), name: UIApplication.willResignActiveNotification, object: nil)
+        center.addObserver(self, selector: #selector(didBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
     func removeNotificationObservers() {
@@ -87,12 +54,13 @@ private extension LayerPersistentHelper {
     }
 }
 
-@objc extension LayerPersistentHelper {
+@objc extension MKLayerAnimationPersistence {
     func didBecomeActive() {
         guard let layer = self.layer else { return }
         restoreAnimations(with: Array(persistentAnimations.keys))
         persistentAnimations.removeAll()
-        if persistentSpeed == 1.0 { // if layer was playing before background, resume it
+        /// if layer was playing before background, resume it
+        if persistentSpeed == 1.0 {
             layer.resumeAnimations()
         }
     }
@@ -100,9 +68,11 @@ private extension LayerPersistentHelper {
     func willResignActive() {
         guard let layer = self.layer else { return }
         persistentSpeed = layer.speed
-        layer.speed = 1.0 // in case layer was paused from outside, set speed to 1.0 to get all animations
+        /// in case layer was paused from outside, set speed to 1.0 to get all animations
+        layer.speed = 1.0
         persistAnimations(with: layer.animationKeys())
-        layer.speed = persistentSpeed // restore original speed
+        /// restore original speed
+        layer.speed = persistentSpeed
         layer.pauseAnimations()
     }
 }

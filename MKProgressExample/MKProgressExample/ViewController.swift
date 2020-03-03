@@ -11,6 +11,7 @@ import MKProgress
 
 class ViewController: UIViewController {
     
+    /// MARK: - View's Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
         MKProgress.config.logoImage = #imageLiteral(resourceName: "Swift_logo")
     }
     
+    /// MARK: - User Interactions
     @IBAction func show(_ sender: UIButton) {
         MKProgress.show()
         
