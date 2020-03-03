@@ -12,7 +12,7 @@ class MKActivityIndicatorView: MKProgressBaseView {
 
     let activityIndicatorView: UIActivityIndicatorView = {
         let config = MKProgress.config
-        let activity = UIActivityIndicatorView(activityIndicatorStyle: config.activityIndicatorStyle)
+        let activity = UIActivityIndicatorView(style: config.activityIndicatorStyle)
         activity.color = config.activityIndicatorColor
         activity.translatesAutoresizingMaskIntoConstraints = false
         return activity

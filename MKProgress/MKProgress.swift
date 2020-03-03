@@ -50,7 +50,7 @@ public final class MKProgress {
         let hudWindow = UIWindow()
         hudWindow.frame = UIScreen.main.bounds
         hudWindow.isHidden = false
-        hudWindow.windowLevel = UIWindowLevelNormal
+        hudWindow.windowLevel = UIWindow.Level.normal
         hudWindow.backgroundColor = UIColor.clear
         let controller = MKProgressViewController()
         hudWindow.rootViewController = controller

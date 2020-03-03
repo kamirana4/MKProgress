@@ -28,7 +28,7 @@ public struct MKConfig {
      - Progress HUD activity indicator style
      - Default: .whiteLarge
      */
-    public var activityIndicatorStyle: UIActivityIndicatorViewStyle = .whiteLarge
+    public var activityIndicatorStyle: UIActivityIndicatorView.Style = .whiteLarge
     
     /**
      - Progress HUD activity indicator color
