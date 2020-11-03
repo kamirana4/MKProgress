@@ -1,7 +1,6 @@
 # MKProgress
 An iOS Simple Swift Progress HUD 
 
-
 ![image](https://github.com/kamirana4/MKProgress/blob/master/Images/6.gif)
 ![image](https://github.com/kamirana4/MKProgress/blob/master/Images/5.gif)
 ![image](https://github.com/kamirana4/MKProgress/blob/master/Images/2.gif)
@@ -27,9 +26,9 @@ If you want to use the latest features of MKProgress use normal external source 
 pod 'MKProgress', :git => 'https://github.com/kamirana4/MKProgress.git'
 ```
 
-This will pull the latest master branch everytime you do 'pod isntall'
+This will pull the latest master branch everytime you do 'pod install'
 
-## For Xcdoe 9.4.1 or Swift < 4.2
+## For Xcode 9.4.1 or Swift < 4.2
 
 ```ruby
   pod 'MKProgress', '1.0.7'
@@ -92,10 +91,6 @@ MKProgress.config.prefersStatusBarHidden = false
 
 ```
 
-## Licence
+## License
 
-MKProgress is released under the MIT license. See LICENSE for details
-
-
-
-
+MKProgress is released under the MIT license. See LICENSE for details.
