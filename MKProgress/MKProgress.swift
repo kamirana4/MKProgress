@@ -74,11 +74,13 @@ extension MKProgress {
     /// - parameter animated: Flag to indicate if progress hud should appear with animation.
     /// - animated: Default: true
     fileprivate static func makeKeyWindowVisible(_ animated: Bool) {
-        shared.hudWindow = shared.getHUDWindow()
-        shared.hudWindow?.makeKeyAndVisible()
-        
-        guard animated else { return }
-        shared.playFadeInAnimation()
+        DispatchQueue.main.async {
+            shared.hudWindow = shared.getHUDWindow()
+            shared.hudWindow?.makeKeyAndVisible()
+            
+            guard animated else { return }
+            shared.playFadeInAnimation()
+        }
     }
     
     /// Shows progress hud after the given time interval
@@ -135,13 +137,15 @@ extension MKProgress {
         
         MKProgress.shared.isWaitingToShow = false
         
-        if animated {
-            progress.playFadeOutAnimation({ _ in
-                guard MKProgress.shared.isDismissing else { return }
+        DispatchQueue.main.async {
+            if animated {
+                progress.playFadeOutAnimation({ _ in
+                    guard MKProgress.shared.isDismissing else { return }
+                    hideProgressHud()
+                })
+            } else {
                 hideProgressHud()
-            })
-        } else {
-            hideProgressHud()
+            }
         }
     }
 }
