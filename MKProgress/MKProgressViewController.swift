@@ -89,11 +89,19 @@ class MKProgressViewController: UIViewController {
     }
     
     internal override var preferredStatusBarStyle: UIStatusBarStyle {
-        return MKProgress.config.preferredStatusBarStyle
+        if let rootViewController = UIApplication.shared.delegate?.window??.rootViewController {
+            return rootViewController.preferredStatusBarStyle
+        } else {
+            return MKProgress.config.preferredStatusBarStyle
+        }
     }
     
     internal override var prefersStatusBarHidden: Bool {
-        return MKProgress.config.prefersStatusBarHidden
+        if let rootViewController = UIApplication.shared.delegate?.window??.rootViewController {
+            return rootViewController.prefersStatusBarHidden
+        } else {
+            return MKProgress.config.prefersStatusBarHidden
+        }
     }
     
     internal override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {

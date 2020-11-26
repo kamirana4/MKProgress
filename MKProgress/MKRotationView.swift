@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class MKRotationView: MKProgressBaseView {
     
@@ -25,6 +26,8 @@ class MKRotationView: MKProgressBaseView {
     override func configureView() {
         super.configureView()
  
+        radialLayer.makeAnimationsPersistent()
+        
         let config = MKProgress.config
         
         let condition = config.width == config.height

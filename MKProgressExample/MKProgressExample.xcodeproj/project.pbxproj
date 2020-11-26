@@ -145,12 +145,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Muhammad Kamran";
 				TargetAttributes = {
 					FA864FB91E917F1B004AB7B0 = {
 						CreatedOnToolsVersion = 8.3;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -375,6 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Muhammad-Kamran.MKProgressExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -392,6 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Muhammad-Kamran.MKProgressExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
