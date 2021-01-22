@@ -27,9 +27,9 @@ If you want to use the latest features of MKProgress use normal external source 
 pod 'MKProgress', :git => 'https://github.com/kamirana4/MKProgress.git'
 ```
 
-This will pull the latest master branch everytime you do 'pod isntall'
+This will pull the latest master branch everytime you do 'pod install'
 
-## For Xcdoe 9.4.1 or Swift < 4.2
+## For Xcode 9.4.1 or Swift < 4.2
 
 ```ruby
   pod 'MKProgress', '1.0.7'
