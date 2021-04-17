@@ -1,7 +1,6 @@
 # MKProgress
 An iOS Simple Swift Progress HUD 
 
-
 ![image](https://github.com/kamirana4/MKProgress/blob/master/Images/6.gif)
 ![image](https://github.com/kamirana4/MKProgress/blob/master/Images/5.gif)
 ![image](https://github.com/kamirana4/MKProgress/blob/master/Images/2.gif)
@@ -92,10 +91,6 @@ MKProgress.config.prefersStatusBarHidden = false
 
 ```
 
-## Licence
+## License
 
-MKProgress is released under the MIT license. See LICENSE for details
-
-
-
-
+MKProgress is released under the MIT license. See LICENSE for details.
