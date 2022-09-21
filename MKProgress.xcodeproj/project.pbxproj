@@ -22,6 +22,7 @@
 /* Begin PBXFileReference section */
 		048E504021AB208000A926B3 /* MKLayerAnimationPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKLayerAnimationPersistence.swift; sourceTree = "<group>"; };
 		048E504221AB2C4200A926B3 /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		1F98D36028DB5FBB007727EB /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		A512BB35207B5BDF0070CE9C /* MKRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKRotationView.swift; sourceTree = "<group>"; };
 		A52E85BB207B986E00FD8CFE /* MKConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKConfig.swift; sourceTree = "<group>"; };
 		FA86500E1E9184CF004AB7B0 /* MKProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +49,7 @@
 		FA8650041E9184CF004AB7B0 = {
 			isa = PBXGroup;
 			children = (
+				1F98D36028DB5FBB007727EB /* Package.swift */,
 				FA8650101E9184CF004AB7B0 /* MKProgress */,
 				FA86500F1E9184CF004AB7B0 /* Products */,
 			);
